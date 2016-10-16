@@ -4,40 +4,51 @@ html {
   line-height: 1.5;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 h1 {
   font-family: "Bevan", cursive;
   text-align: center;
   color: #fff;
+  margin: .3em;
+  padding: 0;
+}
 
+nav li {
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #713837;
+  padding: .5em .75em;
+  margin: 0;
+  border-radius: 4px;
+  display: inline;
 }
 
 nav a {
-  font-family: sans-serif;
-  color: #fff;
-  text-decoration: none;
-  background-color: #713837;
-  padding: 0.5em 0.75em;
-  margin: 0.3em;
   text-align: center;
-  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #fff;
+}
 
+nav ul {
+  text-align: center;
 }
 
 nav a:hover {
   background-color: #f33;
-
+  color: #fff;
 }
 
 body {
   background-color: #79756f;
-  padding: .6em;
-  margin: 0em;
+  padding: 0;
+  margin: 0;
   border-top: 3px solid #595652;
   border-bottom: 3px solid #595652;
   border-radius: 10px;
-
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
+  list-style-type: none;
 }
